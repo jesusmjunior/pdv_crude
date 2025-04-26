@@ -1,0 +1,1312 @@
+/* POS System Dark Theme - Black and Yellow Color Scheme */                                                        │ │
+│ │                                                                                                                    │ │
+│ │ :root {                                                                                                            │ │
+│ │   /* Color Palette */                                                                                              │ │
+│ │   --black: #121212;                                                                                                │ │
+│ │   --dark-gray: #1e1e1e;                                                                                            │ │
+│ │   --medium-gray: #2d2d2d;                                                                                          │ │
+│ │   --light-gray: #424242;                                                                                           │ │
+│ │   --yellow-primary: #ffc107;                                                                                       │ │
+│ │   --yellow-light: #ffecb3;                                                                                         │ │
+│ │   --yellow-dark: #ff8f00;                                                                                          │ │
+│ │   --text-white: #f5f5f5;                                                                                           │ │
+│ │   --text-light: #e0e0e0;                                                                                           │ │
+│ │   --text-muted: #9e9e9e;                                                                                           │ │
+│ │   --success: #4caf50;                                                                                              │ │
+│ │   --error: #f44336;                                                                                                │ │
+│ │   --warning: #ff9800;                                                                                              │ │
+│ │   --info: #2196f3;                                                                                                 │ │
+│ │                                                                                                                    │ │
+│ │   /* Typography */                                                                                                 │ │
+│ │   --font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans',  │ │
+│ │ 'Helvetica Neue', sans-serif;                                                                                      │ │
+│ │   --font-size-xs: 0.75rem;   /* 12px */                                                                            │ │
+│ │   --font-size-sm: 0.875rem;  /* 14px */                                                                            │ │
+│ │   --font-size-md: 1rem;      /* 16px */                                                                            │ │
+│ │   --font-size-lg: 1.25rem;   /* 20px */                                                                            │ │
+│ │   --font-size-xl: 1.5rem;    /* 24px */                                                                            │ │
+│ │   --font-size-2xl: 2rem;     /* 32px */                                                                            │ │
+│ │                                                                                                                    │ │
+│ │   /* Spacing */                                                                                                    │ │
+│ │   --spacing-xs: 0.25rem;    /* 4px */                                                                              │ │
+│ │   --spacing-sm: 0.5rem;     /* 8px */                                                                              │ │
+│ │   --spacing-md: 1rem;       /* 16px */                                                                             │ │
+│ │   --spacing-lg: 1.5rem;     /* 24px */                                                                             │ │
+│ │   --spacing-xl: 2rem;       /* 32px */                                                                             │ │
+│ │                                                                                                                    │ │
+│ │   /* Border Radius */                                                                                              │ │
+│ │   --radius-sm: 4px;                                                                                                │ │
+│ │   --radius-md: 8px;                                                                                                │ │
+│ │   --radius-lg: 12px;                                                                                               │ │
+│ │   --radius-full: 9999px;                                                                                           │ │
+│ │                                                                                                                    │ │
+│ │   /* Shadows */                                                                                                    │ │
+│ │   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);                                       │ │
+│ │   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);                                       │ │
+│ │   --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);                                     │ │
+│ │                                                                                                                    │ │
+│ │   /* Transitions */                                                                                                │ │
+│ │   --transition-fast: 150ms ease;                                                                                   │ │
+│ │   --transition-normal: 250ms ease;                                                                                 │ │
+│ │   --transition-slow: 350ms ease;                                                                                   │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ /* Base Styles */                                                                                                  │ │
+│ │ * {                                                                                                                │ │
+│ │   margin: 0;                                                                                                       │ │
+│ │   padding: 0;                                                                                                      │ │
+│ │   box-sizing: border-box;                                                                                          │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ html {                                                                                                             │ │
+│ │   font-size: 16px;                                                                                                 │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ body {                                                                                                             │ │
+│ │   font-family: var(--font-family);                                                                                 │ │
+│ │   background-color: var(--black);                                                                                  │ │
+│ │   color: var(--text-white);                                                                                        │ │
+│ │   line-height: 1.5;                                                                                                │ │
+│ │   -webkit-font-smoothing: antialiased;                                                                             │ │
+│ │   -moz-osx-font-smoothing: grayscale;                                                                              │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ h1, h2, h3, h4, h5, h6 {                                                                                           │ │
+│ │   margin-bottom: var(--spacing-md);                                                                                │ │
+│ │   font-weight: 500;                                                                                                │ │
+│ │   line-height: 1.2;                                                                                                │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ h1 { font-size: var(--font-size-2xl); }                                                                            │ │
+│ │ h2 { font-size: var(--font-size-xl); }                                                                             │ │
+│ │ h3 { font-size: var(--font-size-lg); }                                                                             │ │
+│ │ h4 { font-size: var(--font-size-md); }                                                                             │ │
+│ │ h5 { font-size: var(--font-size-sm); }                                                                             │ │
+│ │ h6 { font-size: var(--font-size-xs); }                                                                             │ │
+│ │                                                                                                                    │ │
+│ │ p {                                                                                                                │ │
+│ │   margin-bottom: var(--spacing-md);                                                                                │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ a {                                                                                                                │ │
+│ │   color: var(--yellow-primary);                                                                                    │ │
+│ │   text-decoration: none;                                                                                           │ │
+│ │   transition: color var(--transition-fast);                                                                        │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ a:hover {                                                                                                          │ │
+│ │   color: var(--yellow-light);                                                                                      │ │
+│ │   text-decoration: underline;                                                                                      │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ img, svg {                                                                                                         │ │
+│ │   max-width: 100%;                                                                                                 │ │
+│ │   height: auto;                                                                                                    │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ /* Layout */                                                                                                       │ │
+│ │ .container {                                                                                                       │ │
+│ │   width: 100%;                                                                                                     │ │
+│ │   max-width: 1200px;                                                                                               │ │
+│ │   margin: 0 auto;                                                                                                  │ │
+│ │   padding: 0 var(--spacing-md);                                                                                    │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .section {                                                                                                         │ │
+│ │   padding: var(--spacing-xl) 0;                                                                                    │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .row {                                                                                                             │ │
+│ │   display: flex;                                                                                                   │ │
+│ │   flex-wrap: wrap;                                                                                                 │ │
+│ │   margin: 0 calc(-1 * var(--spacing-md));                                                                          │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .col {                                                                                                             │ │
+│ │   flex: 1 1 0%;                                                                                                    │ │
+│ │   padding: 0 var(--spacing-md);                                                                                    │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ /* Grid */                                                                                                         │ │
+│ │ .grid {                                                                                                            │ │
+│ │   display: grid;                                                                                                   │ │
+│ │   gap: var(--spacing-md);                                                                                          │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .grid-2 { grid-template-columns: repeat(2, 1fr); }                                                                 │ │
+│ │ .grid-3 { grid-template-columns: repeat(3, 1fr); }                                                                 │ │
+│ │ .grid-4 { grid-template-columns: repeat(4, 1fr); }                                                                 │ │
+│ │                                                                                                                    │ │
+│ │ /* Cards */                                                                                                        │ │
+│ │ .card {                                                                                                            │ │
+│ │   background-color: var(--dark-gray);                                                                              │ │
+│ │   border-radius: var(--radius-md);                                                                                 │ │
+│ │   box-shadow: var(--shadow-sm);                                                                                    │ │
+│ │   overflow: hidden;                                                                                                │ │
+│ │   transition: transform var(--transition-normal), box-shadow var(--transition-normal);                             │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .card:hover {                                                                                                      │ │
+│ │   transform: translateY(-4px);                                                                                     │ │
+│ │   box-shadow: var(--shadow-md);                                                                                    │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .card-header {                                                                                                     │ │
+│ │   padding: var(--spacing-md) var(--spacing-lg);                                                                    │ │
+│ │   border-bottom: 1px solid var(--light-gray);                                                                      │ │
+│ │   display: flex;                                                                                                   │ │
+│ │   justify-content: space-between;                                                                                  │ │
+│ │   align-items: center;                                                                                             │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .card-body {                                                                                                       │ │
+│ │   padding: var(--spacing-lg);                                                                                      │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .card-footer {                                                                                                     │ │
+│ │   padding: var(--spacing-md) var(--spacing-lg);                                                                    │ │
+│ │   border-top: 1px solid var(--light-gray);                                                                         │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .card-title {                                                                                                      │ │
+│ │   margin-bottom: var(--spacing-sm);                                                                                │ │
+│ │   font-weight: 500;                                                                                                │ │
+│ │   color: var(--yellow-primary);                                                                                    │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .card-subtitle {                                                                                                   │ │
+│ │   margin-bottom: var(--spacing-md);                                                                                │ │
+│ │   font-size: var(--font-size-sm);                                                                                  │ │
+│ │   color: var(--text-muted);                                                                                        │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .card-image {                                                                                                      │ │
+│ │   width: 100%;                                                                                                     │ │
+│ │   height: 200px;                                                                                                   │ │
+│ │   object-fit: cover;                                                                                               │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ /* Stats Card */                                                                                                   │ │
+│ │ .stats-card {                                                                                                      │ │
+│ │   padding: var(--spacing-lg);                                                                                      │ │
+│ │   background-color: var(--dark-gray);                                                                              │ │
+│ │   border-radius: var(--radius-md);                                                                                 │ │
+│ │   box-shadow: var(--shadow-sm);                                                                                    │ │
+│ │   display: flex;                                                                                                   │ │
+│ │   flex-direction: column;                                                                                          │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .stats-value {                                                                                                     │ │
+│ │   font-size: var(--font-size-2xl);                                                                                 │ │
+│ │   font-weight: 600;                                                                                                │ │
+│ │   margin-bottom: var(--spacing-xs);                                                                                │ │
+│ │   color: var(--yellow-primary);                                                                                    │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .stats-label {                                                                                                     │ │
+│ │   font-size: var(--font-size-sm);                                                                                  │ │
+│ │   color: var(--text-muted);                                                                                        │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .stats-icon {                                                                                                      │ │
+│ │   align-self: flex-end;                                                                                            │ │
+│ │   color: var(--yellow-dark);                                                                                       │ │
+│ │   font-size: var(--font-size-xl);                                                                                  │ │
+│ │   margin-top: var(--spacing-sm);                                                                                   │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ /* Tables */                                                                                                       │ │
+│ │ .table-container {                                                                                                 │ │
+│ │   width: 100%;                                                                                                     │ │
+│ │   overflow-x: auto;                                                                                                │ │
+│ │   border-radius: var(--radius-md);                                                                                 │ │
+│ │   background-color: var(--dark-gray);                                                                              │ │
+│ │   margin-bottom: var(--spacing-lg);                                                                                │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ table {                                                                                                            │ │
+│ │   width: 100%;                                                                                                     │ │
+│ │   border-collapse: collapse;                                                                                       │ │
+│ │   text-align: left;                                                                                                │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ th {                                                                                                               │ │
+│ │   background-color: var(--medium-gray);                                                                            │ │
+│ │   color: var(--yellow-primary);                                                                                    │ │
+│ │   font-weight: 500;                                                                                                │ │
+│ │   padding: var(--spacing-md);                                                                                      │ │
+│ │   text-transform: uppercase;                                                                                       │ │
+│ │   font-size: var(--font-size-xs);                                                                                  │ │
+│ │   letter-spacing: 0.05em;                                                                                          │ │
+│ │   white-space: nowrap;                                                                                             │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ td {                                                                                                               │ │
+│ │   padding: var(--spacing-md);                                                                                      │ │
+│ │   border-top: 1px solid var(--light-gray);                                                                         │ │
+│ │   vertical-align: middle;                                                                                          │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ tbody tr {                                                                                                         │ │
+│ │   transition: background-color var(--transition-fast);                                                             │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ tbody tr:hover {                                                                                                   │ │
+│ │   background-color: var(--medium-gray);                                                                            │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ /* Stripe effect for tables */                                                                                     │ │
+│ │ tbody tr:nth-child(even) {                                                                                         │ │
+│ │   background-color: rgba(255, 255, 255, 0.03);                                                                     │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .table-action {                                                                                                    │ │
+│ │   display: flex;                                                                                                   │ │
+│ │   gap: var(--spacing-sm);                                                                                          │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ /* Pagination */                                                                                                   │ │
+│ │ .pagination {                                                                                                      │ │
+│ │   display: flex;                                                                                                   │ │
+│ │   justify-content: center;                                                                                         │ │
+│ │   align-items: center;                                                                                             │ │
+│ │   margin-top: var(--spacing-lg);                                                                                   │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .pagination-item {                                                                                                 │ │
+│ │   width: 36px;                                                                                                     │ │
+│ │   height: 36px;                                                                                                    │ │
+│ │   display: flex;                                                                                                   │ │
+│ │   justify-content: center;                                                                                         │ │
+│ │   align-items: center;                                                                                             │ │
+│ │   border-radius: var(--radius-full);                                                                               │ │
+│ │   margin: 0 var(--spacing-xs);                                                                                     │ │
+│ │   transition: all var(--transition-fast);                                                                          │ │
+│ │   cursor: pointer;                                                                                                 │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .pagination-item:hover {                                                                                           │ │
+│ │   background-color: var(--light-gray);                                                                             │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .pagination-item.active {                                                                                          │ │
+│ │   background-color: var(--yellow-primary);                                                                         │ │
+│ │   color: var(--black);                                                                                             │ │
+│ │   font-weight: 500;                                                                                                │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ /* Buttons */                                                                                                      │ │
+│ │ .btn {                                                                                                             │ │
+│ │   display: inline-flex;                                                                                            │ │
+│ │   align-items: center;                                                                                             │ │
+│ │   justify-content: center;                                                                                         │ │
+│ │   padding: var(--spacing-sm) var(--spacing-lg);                                                                    │ │
+│ │   border-radius: var(--radius-md);                                                                                 │ │
+│ │   font-weight: 500;                                                                                                │ │
+│ │   cursor: pointer;                                                                                                 │ │
+│ │   transition: all var(--transition-fast);                                                                          │ │
+│ │   font-size: var(--font-size-sm);                                                                                  │ │
+│ │   border: none;                                                                                                    │ │
+│ │   outline: none;                                                                                                   │ │
+│ │   gap: var(--spacing-sm);                                                                                          │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .btn:disabled {                                                                                                    │ │
+│ │   opacity: 0.6;                                                                                                    │ │
+│ │   cursor: not-allowed;                                                                                             │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .btn-primary {                                                                                                     │ │
+│ │   background-color: var(--yellow-primary);                                                                         │ │
+│ │   color: var(--black);                                                                                             │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .btn-primary:hover {                                                                                               │ │
+│ │   background-color: var(--yellow-light);                                                                           │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .btn-secondary {                                                                                                   │ │
+│ │   background-color: var(--medium-gray);                                                                            │ │
+│ │   color: var(--text-white);                                                                                        │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .btn-secondary:hover {                                                                                             │ │
+│ │   background-color: var(--light-gray);                                                                             │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .btn-success {                                                                                                     │ │
+│ │   background-color: var(--success);                                                                                │ │
+│ │   color: white;                                                                                                    │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .btn-success:hover {                                                                                               │ │
+│ │   background-color: #388e3c;                                                                                       │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .btn-danger {                                                                                                      │ │
+│ │   background-color: var(--error);                                                                                  │ │
+│ │   color: white;                                                                                                    │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .btn-danger:hover {                                                                                                │ │
+│ │   background-color: #d32f2f;                                                                                       │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .btn-warning {                                                                                                     │ │
+│ │   background-color: var(--warning);                                                                                │ │
+│ │   color: var(--black);                                                                                             │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .btn-warning:hover {                                                                                               │ │
+│ │   background-color: #f57c00;                                                                                       │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .btn-icon {                                                                                                        │ │
+│ │   width: 40px;                                                                                                     │ │
+│ │   height: 40px;                                                                                                    │ │
+│ │   padding: 0;                                                                                                      │ │
+│ │   border-radius: var(--radius-full);                                                                               │ │
+│ │   justify-content: center;                                                                                         │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .btn-sm {                                                                                                          │ │
+│ │   padding: var(--spacing-xs) var(--spacing-md);                                                                    │ │
+│ │   font-size: var(--font-size-xs);                                                                                  │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .btn-lg {                                                                                                          │ │
+│ │   padding: var(--spacing-md) var(--spacing-xl);                                                                    │ │
+│ │   font-size: var(--font-size-md);                                                                                  │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ /* Forms */                                                                                                        │ │
+│ │ .form-group {                                                                                                      │ │
+│ │   margin-bottom: var(--spacing-md);                                                                                │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .form-label {                                                                                                      │ │
+│ │   display: block;                                                                                                  │ │
+│ │   margin-bottom: var(--spacing-xs);                                                                                │ │
+│ │   font-weight: 500;                                                                                                │ │
+│ │   color: var(--text-light);                                                                                        │ │
+│ │   font-size: var(--font-size-sm);                                                                                  │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .form-control {                                                                                                    │ │
+│ │   display: block;                                                                                                  │ │
+│ │   width: 100%;                                                                                                     │ │
+│ │   padding: var(--spacing-sm) var(--spacing-md);                                                                    │ │
+│ │   font-size: var(--font-size-md);                                                                                  │ │
+│ │   line-height: 1.5;                                                                                                │ │
+│ │   background-color: var(--medium-gray);                                                                            │ │
+│ │   color: var(--text-white);                                                                                        │ │
+│ │   border: 1px solid var(--light-gray);                                                                             │ │
+│ │   border-radius: var(--radius-md);                                                                                 │ │
+│ │   transition: border-color var(--transition-fast), box-shadow var(--transition-fast);                              │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .form-control:focus {                                                                                              │ │
+│ │   outline: none;                                                                                                   │ │
+│ │   border-color: var(--yellow-primary);                                                                             │ │
+│ │   box-shadow: 0 0 0 2px rgba(255, 193, 7, 0.25);                                                                   │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .form-control::placeholder {                                                                                       │ │
+│ │   color: var(--text-muted);                                                                                        │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .form-select {                                                                                                     │ │
+│ │   appearance: none;                                                                                                │ │
+│ │   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'       │ │
+│ │ viewBox='0 0 24 24' fill='none' stroke='%239e9e9e' stroke-width='2' stroke-linecap='round'                         │ │
+│ │ stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");                                                │ │
+│ │   background-repeat: no-repeat;                                                                                    │ │
+│ │   background-position: right var(--spacing-md) center;                                                             │ │
+│ │   background-size: 16px;                                                                                           │ │
+│ │   padding-right: var(--spacing-xl);                                                                                │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .form-check {                                                                                                      │ │
+│ │   display: flex;                                                                                                   │ │
+│ │   align-items: center;                                                                                             │ │
+│ │   margin-bottom: var(--spacing-sm);                                                                                │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .form-check-input {                                                                                                │ │
+│ │   margin-right: var(--spacing-sm);                                                                                 │ │
+│ │   width: 18px;                                                                                                     │ │
+│ │   height: 18px;                                                                                                    │ │
+│ │   accent-color: var(--yellow-primary);                                                                             │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .form-check-label {                                                                                                │ │
+│ │   font-size: var(--font-size-sm);                                                                                  │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .form-text {                                                                                                       │ │
+│ │   display: block;                                                                                                  │ │
+│ │   margin-top: var(--spacing-xs);                                                                                   │ │
+│ │   font-size: var(--font-size-xs);                                                                                  │ │
+│ │   color: var(--text-muted);                                                                                        │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .form-error {                                                                                                      │ │
+│ │   color: var(--error);                                                                                             │ │
+│ │   font-size: var(--font-size-xs);                                                                                  │ │
+│ │   margin-top: var(--spacing-xs);                                                                                   │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ /* Search input with icon */                                                                                       │ │
+│ │ .search-container {                                                                                                │ │
+│ │   position: relative;                                                                                              │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .search-input {                                                                                                    │ │
+│ │   padding-left: var(--spacing-xl);                                                                                 │ │
+│ │   width: 100%;                                                                                                     │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .search-icon {                                                                                                     │ │
+│ │   position: absolute;                                                                                              │ │
+│ │   left: var(--spacing-sm);                                                                                         │ │
+│ │   top: 50%;                                                                                                        │ │
+│ │   transform: translateY(-50%);                                                                                     │ │
+│ │   color: var(--text-muted);                                                                                        │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ /* Toggle */                                                                                                       │ │
+│ │ .toggle {                                                                                                          │ │
+│ │   position: relative;                                                                                              │ │
+│ │   display: inline-block;                                                                                           │ │
+│ │   width: 52px;                                                                                                     │ │
+│ │   height: 26px;                                                                                                    │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .toggle input {                                                                                                    │ │
+│ │   opacity: 0;                                                                                                      │ │
+│ │   width: 0;                                                                                                        │ │
+│ │   height: 0;                                                                                                       │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .toggle-slider {                                                                                                   │ │
+│ │   position: absolute;                                                                                              │ │
+│ │   cursor: pointer;                                                                                                 │ │
+│ │   top: 0;                                                                                                          │ │
+│ │   left: 0;                                                                                                         │ │
+│ │   right: 0;                                                                                                        │ │
+│ │   bottom: 0;                                                                                                       │ │
+│ │   background-color: var(--light-gray);                                                                             │ │
+│ │   transition: var(--transition-normal);                                                                            │ │
+│ │   border-radius: var(--radius-full);                                                                               │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .toggle-slider:before {                                                                                            │ │
+│ │   position: absolute;                                                                                              │ │
+│ │   content: "";                                                                                                     │ │
+│ │   height: 20px;                                                                                                    │ │
+│ │   width: 20px;                                                                                                     │ │
+│ │   left: 3px;                                                                                                       │ │
+│ │   bottom: 3px;                                                                                                     │ │
+│ │   background-color: white;                                                                                         │ │
+│ │   transition: var(--transition-normal);                                                                            │ │
+│ │   border-radius: 50%;                                                                                              │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ input:checked + .toggle-slider {                                                                                   │ │
+│ │   background-color: var(--yellow-primary);                                                                         │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ input:checked + .toggle-slider:before {                                                                            │ │
+│ │   transform: translateX(26px);                                                                                     │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ /* Badges */                                                                                                       │ │
+│ │ .badge {                                                                                                           │ │
+│ │   display: inline-block;                                                                                           │ │
+│ │   padding: var(--spacing-xs) var(--spacing-sm);                                                                    │ │
+│ │   font-size: var(--font-size-xs);                                                                                  │ │
+│ │   font-weight: 500;                                                                                                │ │
+│ │   line-height: 1;                                                                                                  │ │
+│ │   text-align: center;                                                                                              │ │
+│ │   white-space: nowrap;                                                                                             │ │
+│ │   vertical-align: baseline;                                                                                        │ │
+│ │   border-radius: var(--radius-sm);                                                                                 │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .badge-primary {                                                                                                   │ │
+│ │   background-color: var(--yellow-primary);                                                                         │ │
+│ │   color: var(--black);                                                                                             │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .badge-success {                                                                                                   │ │
+│ │   background-color: var(--success);                                                                                │ │
+│ │   color: white;                                                                                                    │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .badge-danger {                                                                                                    │ │
+│ │   background-color: var(--error);                                                                                  │ │
+│ │   color: white;                                                                                                    │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .badge-warning {                                                                                                   │ │
+│ │   background-color: var(--warning);                                                                                │ │
+│ │   color: var(--black);                                                                                             │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .badge-info {                                                                                                      │ │
+│ │   background-color: var(--info);                                                                                   │ │
+│ │   color: white;                                                                                                    │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ /* Alerts */                                                                                                       │ │
+│ │ .alert {                                                                                                           │ │
+│ │   padding: var(--spacing-md);                                                                                      │ │
+│ │   margin-bottom: var(--spacing-md);                                                                                │ │
+│ │   border-radius: var(--radius-md);                                                                                 │ │
+│ │   display: flex;                                                                                                   │ │
+│ │   align-items: flex-start;                                                                                         │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .alert-icon {                                                                                                      │ │
+│ │   margin-right: var(--spacing-md);                                                                                 │ │
+│ │   font-size: var(--font-size-lg);                                                                                  │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .alert-content {                                                                                                   │ │
+│ │   flex: 1;                                                                                                         │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .alert-title {                                                                                                     │ │
+│ │   font-weight: 500;                                                                                                │ │
+│ │   margin-bottom: var(--spacing-xs);                                                                                │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .alert-success {                                                                                                   │ │
+│ │   background-color: rgba(76, 175, 80, 0.1);                                                                        │ │
+│ │   border-left: 4px solid var(--success);                                                                           │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .alert-danger {                                                                                                    │ │
+│ │   background-color: rgba(244, 67, 54, 0.1);                                                                        │ │
+│ │   border-left: 4px solid var(--error);                                                                             │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .alert-warning {                                                                                                   │ │
+│ │   background-color: rgba(255, 152, 0, 0.1);                                                                        │ │
+│ │   border-left: 4px solid var(--warning);                                                                           │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .alert-info {                                                                                                      │ │
+│ │   background-color: rgba(33, 150, 243, 0.1);                                                                       │ │
+│ │   border-left: 4px solid var(--info);                                                                              │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ /* Progress bar */                                                                                                 │ │
+│ │ .progress {                                                                                                        │ │
+│ │   height: 8px;                                                                                                     │ │
+│ │   background-color: var(--light-gray);                                                                             │ │
+│ │   border-radius: var(--radius-full);                                                                               │ │
+│ │   overflow: hidden;                                                                                                │ │
+│ │   margin-bottom: var(--spacing-md);                                                                                │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .progress-bar {                                                                                                    │ │
+│ │   height: 100%;                                                                                                    │ │
+│ │   background-color: var(--yellow-primary);                                                                         │ │
+│ │   border-radius: var(--radius-full);                                                                               │ │
+│ │   transition: width var(--transition-normal);                                                                      │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ /* Graphs and Visualizations */                                                                                    │ │
+│ │ .chart-container {                                                                                                 │ │
+│ │   background-color: var(--dark-gray);                                                                              │ │
+│ │   border-radius: var(--radius-md);                                                                                 │ │
+│ │   padding: var(--spacing-lg);                                                                                      │ │
+│ │   margin-bottom: var(--spacing-lg);                                                                                │ │
+│ │   box-shadow: var(--shadow-sm);                                                                                    │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .chart-header {                                                                                                    │ │
+│ │   display: flex;                                                                                                   │ │
+│ │   justify-content: space-between;                                                                                  │ │
+│ │   align-items: center;                                                                                             │ │
+│ │   margin-bottom: var(--spacing-lg);                                                                                │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .chart-title {                                                                                                     │ │
+│ │   font-weight: 500;                                                                                                │ │
+│ │   color: var(--text-white);                                                                                        │ │
+│ │   margin-bottom: var(--spacing-xs);                                                                                │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .chart-subtitle {                                                                                                  │ │
+│ │   font-size: var(--font-size-sm);                                                                                  │ │
+│ │   color: var(--text-muted);                                                                                        │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .chart-legend {                                                                                                    │ │
+│ │   display: flex;                                                                                                   │ │
+│ │   gap: var(--spacing-md);                                                                                          │ │
+│ │   margin-top: var(--spacing-md);                                                                                   │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .legend-item {                                                                                                     │ │
+│ │   display: flex;                                                                                                   │ │
+│ │   align-items: center;                                                                                             │ │
+│ │   font-size: var(--font-size-sm);                                                                                  │ │
+│ │   color: var(--text-light);                                                                                        │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .legend-color {                                                                                                    │ │
+│ │   width: 12px;                                                                                                     │ │
+│ │   height: 12px;                                                                                                    │ │
+│ │   border-radius: 50%;                                                                                              │ │
+│ │   margin-right: var(--spacing-xs);                                                                                 │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ /* Defines the graph colors according to our theme */                                                              │ │
+│ │ .graph-colors {                                                                                                    │ │
+│ │   --graph-color-1: var(--yellow-primary);                                                                          │ │
+│ │   --graph-color-2: var(--yellow-dark);                                                                             │ │
+│ │   --graph-color-3: var(--success);                                                                                 │ │
+│ │   --graph-color-4: var(--error);                                                                                   │ │
+│ │   --graph-color-5: var(--warning);                                                                                 │ │
+│ │   --graph-color-6: var(--info);                                                                                    │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ /* Example of a simple bar chart */                                                                                │ │
+│ │ .bar-chart {                                                                                                       │ │
+│ │   height: 250px;                                                                                                   │ │
+│ │   display: flex;                                                                                                   │ │
+│ │   align-items: flex-end;                                                                                           │ │
+│ │   gap: var(--spacing-md);                                                                                          │ │
+│ │   margin-top: var(--spacing-lg);                                                                                   │ │
+│ │   padding-bottom: var(--spacing-md);                                                                               │ │
+│ │   border-bottom: 1px solid var(--light-gray);                                                                      │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .bar {                                                                                                             │ │
+│ │   flex: 1;                                                                                                         │ │
+│ │   background-color: var(--yellow-primary);                                                                         │ │
+│ │   border-radius: var(--radius-sm) var(--radius-sm) 0 0;                                                            │ │
+│ │   min-width: 20px;                                                                                                 │ │
+│ │   transition: height var(--transition-normal);                                                                     │ │
+│ │   position: relative;                                                                                              │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .bar:hover {                                                                                                       │ │
+│ │   background-color: var(--yellow-light);                                                                           │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .bar-label {                                                                                                       │ │
+│ │   position: absolute;                                                                                              │ │
+│ │   bottom: calc(-1 * var(--spacing-lg));                                                                            │ │
+│ │   left: 0;                                                                                                         │ │
+│ │   right: 0;                                                                                                        │ │
+│ │   text-align: center;                                                                                              │ │
+│ │   font-size: var(--font-size-xs);                                                                                  │ │
+│ │   color: var(--text-muted);                                                                                        │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .bar-value {                                                                                                       │ │
+│ │   position: absolute;                                                                                              │ │
+│ │   top: -20px;                                                                                                      │ │
+│ │   left: 0;                                                                                                         │ │
+│ │   right: 0;                                                                                                        │ │
+│ │   text-align: center;                                                                                              │ │
+│ │   font-size: var(--font-size-xs);                                                                                  │ │
+│ │   color: var(--text-light);                                                                                        │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ /* Donut Chart (CSS-only sample) */                                                                                │ │
+│ │ .donut-chart {                                                                                                     │ │
+│ │   width: 200px;                                                                                                    │ │
+│ │   height: 200px;                                                                                                   │ │
+│ │   border-radius: 50%;                                                                                              │ │
+│ │   background: conic-gradient(                                                                                      │ │
+│ │     var(--yellow-primary) 0% 60%,                                                                                  │ │
+│ │     var(--success) 60% 85%,                                                                                        │ │
+│ │     var(--warning) 85% 100%                                                                                        │ │
+│ │   );                                                                                                               │ │
+│ │   position: relative;                                                                                              │ │
+│ │   margin: var(--spacing-lg) auto;                                                                                  │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .donut-chart::before {                                                                                             │ │
+│ │   content: "";                                                                                                     │ │
+│ │   position: absolute;                                                                                              │ │
+│ │   top: 50%;                                                                                                        │ │
+│ │   left: 50%;                                                                                                       │ │
+│ │   transform: translate(-50%, -50%);                                                                                │ │
+│ │   width: 120px;                                                                                                    │ │
+│ │   height: 120px;                                                                                                   │ │
+│ │   background-color: var(--dark-gray);                                                                              │ │
+│ │   border-radius: 50%;                                                                                              │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .donut-center {                                                                                                    │ │
+│ │   position: absolute;                                                                                              │ │
+│ │   top: 50%;                                                                                                        │ │
+│ │   left: 50%;                                                                                                       │ │
+│ │   transform: translate(-50%, -50%);                                                                                │ │
+│ │   text-align: center;                                                                                              │ │
+│ │   z-index: 1;                                                                                                      │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .donut-value {                                                                                                     │ │
+│ │   font-size: var(--font-size-lg);                                                                                  │ │
+│ │   font-weight: 600;                                                                                                │ │
+│ │   color: var(--yellow-primary);                                                                                    │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .donut-label {                                                                                                     │ │
+│ │   font-size: var(--font-size-xs);                                                                                  │ │
+│ │   color: var(--text-muted);                                                                                        │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ /* Line chart axis (CSS-only sample) */                                                                            │ │
+│ │ .line-chart {                                                                                                      │ │
+│ │   position: relative;                                                                                              │ │
+│ │   height: 250px;                                                                                                   │ │
+│ │   padding: var(--spacing-md) 0;                                                                                    │ │
+│ │   margin-top: var(--spacing-lg);                                                                                   │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .y-axis {                                                                                                          │ │
+│ │   position: absolute;                                                                                              │ │
+│ │   left: 0;                                                                                                         │ │
+│ │   top: 0;                                                                                                          │ │
+│ │   bottom: 0;                                                                                                       │ │
+│ │   width: 30px;                                                                                                     │ │
+│ │   display: flex;                                                                                                   │ │
+│ │   flex-direction: column;                                                                                          │ │
+│ │   justify-content: space-between;                                                                                  │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .y-label {                                                                                                         │ │
+│ │   font-size: var(--font-size-xs);                                                                                  │ │
+│ │   color: var(--text-muted);                                                                                        │ │
+│ │   text-align: right;                                                                                               │ │
+│ │   padding-right: var(--spacing-xs);                                                                                │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .x-axis {                                                                                                          │ │
+│ │   position: absolute;                                                                                              │ │
+│ │   left: 30px;                                                                                                      │ │
+│ │   right: 0;                                                                                                        │ │
+│ │   bottom: 0;                                                                                                       │ │
+│ │   height: 20px;                                                                                                    │ │
+│ │   display: flex;                                                                                                   │ │
+│ │   justify-content: space-between;                                                                                  │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .x-label {                                                                                                         │ │
+│ │   font-size: var(--font-size-xs);                                                                                  │ │
+│ │   color: var(--text-muted);                                                                                        │ │
+│ │   text-align: center;                                                                                              │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ /* Navigation */                                                                                                   │ │
+│ │ .navbar {                                                                                                          │ │
+│ │   background-color: var(--dark-gray);                                                                              │ │
+│ │   padding: var(--spacing-md) var(--spacing-lg);                                                                    │ │
+│ │   box-shadow: var(--shadow-sm);                                                                                    │ │
+│ │   position: sticky;                                                                                                │ │
+│ │   top: 0;                                                                                                          │ │
+│ │   z-index: 10;                                                                                                     │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .navbar-container {                                                                                                │ │
+│ │   display: flex;                                                                                                   │ │
+│ │   justify-content: space-between;                                                                                  │ │
+│ │   align-items: center;                                                                                             │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .navbar-logo {                                                                                                     │ │
+│ │   font-size: var(--font-size-lg);                                                                                  │ │
+│ │   font-weight: 600;                                                                                                │ │
+│ │   color: var(--yellow-primary);                                                                                    │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .navbar-menu {                                                                                                     │ │
+│ │   display: flex;                                                                                                   │ │
+│ │   gap: var(--spacing-lg);                                                                                          │ │
+│ │   list-style: none;                                                                                                │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .navbar-link {                                                                                                     │ │
+│ │   color: var(--text-light);                                                                                        │ │
+│ │   font-weight: 500;                                                                                                │ │
+│ │   transition: color var(--transition-fast);                                                                        │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .navbar-link:hover,                                                                                                │ │
+│ │ .navbar-link.active {                                                                                              │ │
+│ │   color: var(--yellow-primary);                                                                                    │ │
+│ │   text-decoration: none;                                                                                           │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .navbar-actions {                                                                                                  │ │
+│ │   display: flex;                                                                                                   │ │
+│ │   align-items: center;                                                                                             │ │
+│ │   gap: var(--spacing-md);                                                                                          │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ /* Sidebar */                                                                                                      │ │
+│ │ .sidebar {                                                                                                         │ │
+│ │   width: 250px;                                                                                                    │ │
+│ │   height: 100vh;                                                                                                   │ │
+│ │   background-color: var(--dark-gray);                                                                              │ │
+│ │   position: fixed;                                                                                                 │ │
+│ │   top: 0;                                                                                                          │ │
+│ │   left: 0;                                                                                                         │ │
+│ │   padding: var(--spacing-lg) 0;                                                                                    │ │
+│ │   overflow-y: auto;                                                                                                │ │
+│ │   transition: transform var(--transition-normal);                                                                  │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .sidebar-header {                                                                                                  │ │
+│ │   padding: 0 var(--spacing-lg);                                                                                    │ │
+│ │   margin-bottom: var(--spacing-lg);                                                                                │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .sidebar-logo {                                                                                                    │ │
+│ │   font-size: var(--font-size-lg);                                                                                  │ │
+│ │   font-weight: 600;                                                                                                │ │
+│ │   color: var(--yellow-primary);                                                                                    │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .sidebar-nav {                                                                                                     │ │
+│ │   list-style: none;                                                                                                │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .sidebar-item {                                                                                                    │ │
+│ │   margin-bottom: var(--spacing-xs);                                                                                │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .sidebar-link {                                                                                                    │ │
+│ │   display: flex;                                                                                                   │ │
+│ │   align-items: center;                                                                                             │ │
+│ │   padding: var(--spacing-sm) var(--spacing-lg);                                                                    │ │
+│ │   color: var(--text-light);                                                                                        │ │
+│ │   font-weight: 500;                                                                                                │ │
+│ │   transition: all var(--transition-fast);                                                                          │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .sidebar-link:hover,                                                                                               │ │
+│ │ .sidebar-link.active {                                                                                             │ │
+│ │   background-color: var(--medium-gray);                                                                            │ │
+│ │   color: var(--yellow-primary);                                                                                    │ │
+│ │   text-decoration: none;                                                                                           │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .sidebar-icon {                                                                                                    │ │
+│ │   margin-right: var(--spacing-sm);                                                                                 │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .sidebar-footer {                                                                                                  │ │
+│ │   padding: 0 var(--spacing-lg);                                                                                    │ │
+│ │   margin-top: auto;                                                                                                │ │
+│ │   border-top: 1px solid var(--light-gray);                                                                         │ │
+│ │   padding-top: var(--spacing-lg);                                                                                  │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ /* Main content area when sidebar is present */                                                                    │ │
+│ │ .content-with-sidebar {                                                                                            │ │
+│ │   margin-left: 250px;                                                                                              │ │
+│ │   padding: var(--spacing-lg);                                                                                      │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ /* Modal */                                                                                                        │ │
+│ │ .modal-backdrop {                                                                                                  │ │
+│ │   position: fixed;                                                                                                 │ │
+│ │   top: 0;                                                                                                          │ │
+│ │   left: 0;                                                                                                         │ │
+│ │   right: 0;                                                                                                        │ │
+│ │   bottom: 0;                                                                                                       │ │
+│ │   background-color: rgba(0, 0, 0, 0.7);                                                                            │ │
+│ │   display: flex;                                                                                                   │ │
+│ │   justify-content: center;                                                                                         │ │
+│ │   align-items: center;                                                                                             │ │
+│ │   z-index: 20;                                                                                                     │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .modal {                                                                                                           │ │
+│ │   background-color: var(--dark-gray);                                                                              │ │
+│ │   border-radius: var(--radius-md);                                                                                 │ │
+│ │   width: 90%;                                                                                                      │ │
+│ │   max-width: 500px;                                                                                                │ │
+│ │   max-height: 90vh;                                                                                                │ │
+│ │   overflow-y: auto;                                                                                                │ │
+│ │   box-shadow: var(--shadow-lg);                                                                                    │ │
+│ │   animation: modal-appear 300ms ease-out;                                                                          │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ @keyframes modal-appear {                                                                                          │ │
+│ │   from {                                                                                                           │ │
+│ │     opacity: 0;                                                                                                    │ │
+│ │     transform: translateY(-50px);                                                                                  │ │
+│ │   }                                                                                                                │ │
+│ │   to {                                                                                                             │ │
+│ │     opacity: 1;                                                                                                    │ │
+│ │     transform: translateY(0);                                                                                      │ │
+│ │   }                                                                                                                │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .modal-header {                                                                                                    │ │
+│ │   padding: var(--spacing-lg);                                                                                      │ │
+│ │   border-bottom: 1px solid var(--light-gray);                                                                      │ │
+│ │   display: flex;                                                                                                   │ │
+│ │   justify-content: space-between;                                                                                  │ │
+│ │   align-items: center;                                                                                             │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .modal-title {                                                                                                     │ │
+│ │   font-weight: 500;                                                                                                │ │
+│ │   font-size: var(--font-size-lg);                                                                                  │ │
+│ │   color: var(--yellow-primary);                                                                                    │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .modal-close {                                                                                                     │ │
+│ │   background: none;                                                                                                │ │
+│ │   border: none;                                                                                                    │ │
+│ │   cursor: pointer;                                                                                                 │ │
+│ │   color: var(--text-muted);                                                                                        │ │
+│ │   font-size: var(--font-size-xl);                                                                                  │ │
+│ │   transition: color var(--transition-fast);                                                                        │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .modal-close:hover {                                                                                               │ │
+│ │   color: var(--text-white);                                                                                        │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .modal-body {                                                                                                      │ │
+│ │   padding: var(--spacing-lg);                                                                                      │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .modal-footer {                                                                                                    │ │
+│ │   padding: var(--spacing-lg);                                                                                      │ │
+│ │   border-top: 1px solid var(--light-gray);                                                                         │ │
+│ │   display: flex;                                                                                                   │ │
+│ │   justify-content: flex-end;                                                                                       │ │
+│ │   gap: var(--spacing-sm);                                                                                          │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ /* Loader */                                                                                                       │ │
+│ │ .loader {                                                                                                          │ │
+│ │   display: inline-block;                                                                                           │ │
+│ │   width: 30px;                                                                                                     │ │
+│ │   height: 30px;                                                                                                    │ │
+│ │   border: 3px solid rgba(255, 193, 7, 0.3);                                                                        │ │
+│ │   border-radius: 50%;                                                                                              │ │
+│ │   border-top-color: var(--yellow-primary);                                                                         │ │
+│ │   animation: spin 1s ease-in-out infinite;                                                                         │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ @keyframes spin {                                                                                                  │ │
+│ │   to {                                                                                                             │ │
+│ │     transform: rotate(360deg);                                                                                     │ │
+│ │   }                                                                                                                │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ /* Skeleton loading effect */                                                                                      │ │
+│ │ .skeleton {                                                                                                        │ │
+│ │   background: linear-gradient(                                                                                     │ │
+│ │     90deg,                                                                                                         │ │
+│ │     var(--medium-gray) 25%,                                                                                        │ │
+│ │     var(--light-gray) 50%,                                                                                         │ │
+│ │     var(--medium-gray) 75%                                                                                         │ │
+│ │   );                                                                                                               │ │
+│ │   background-size: 200% 100%;                                                                                      │ │
+│ │   animation: skeleton-loading 1.5s ease-in-out infinite;                                                           │ │
+│ │   border-radius: var(--radius-sm);                                                                                 │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ @keyframes skeleton-loading {                                                                                      │ │
+│ │   0% {                                                                                                             │ │
+│ │     background-position: 200% 0;                                                                                   │ │
+│ │   }                                                                                                                │ │
+│ │   100% {                                                                                                           │ │
+│ │     background-position: -200% 0;                                                                                  │ │
+│ │   }                                                                                                                │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .skeleton-text {                                                                                                   │ │
+│ │   height: 16px;                                                                                                    │ │
+│ │   margin-bottom: var(--spacing-sm);                                                                                │ │
+│ │   width: 100%;                                                                                                     │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .skeleton-text:last-child {                                                                                        │ │
+│ │   width: 80%;                                                                                                      │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .skeleton-circle {                                                                                                 │ │
+│ │   width: 50px;                                                                                                     │ │
+│ │   height: 50px;                                                                                                    │ │
+│ │   border-radius: 50%;                                                                                              │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .skeleton-rectangle {                                                                                              │ │
+│ │   height: 120px;                                                                                                   │ │
+│ │   width: 100%;                                                                                                     │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ /* Tooltips */                                                                                                     │ │
+│ │ .tooltip {                                                                                                         │ │
+│ │   position: relative;                                                                                              │ │
+│ │   display: inline-block;                                                                                           │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .tooltip-text {                                                                                                    │ │
+│ │   visibility: hidden;                                                                                              │ │
+│ │   background-color: var(--medium-gray);                                                                            │ │
+│ │   color: var(--text-white);                                                                                        │ │
+│ │   text-align: center;                                                                                              │ │
+│ │   padding: var(--spacing-xs) var(--spacing-sm);                                                                    │ │
+│ │   border-radius: var(--radius-sm);                                                                                 │ │
+│ │   position: absolute;                                                                                              │ │
+│ │   z-index: 10;                                                                                                     │ │
+│ │   bottom: 125%;                                                                                                    │ │
+│ │   left: 50%;                                                                                                       │ │
+│ │   transform: translateX(-50%);                                                                                     │ │
+│ │   opacity: 0;                                                                                                      │ │
+│ │   transition: opacity var(--transition-fast);                                                                      │ │
+│ │   font-size: var(--font-size-xs);                                                                                  │ │
+│ │   white-space: nowrap;                                                                                             │ │
+│ │   box-shadow: var(--shadow-sm);                                                                                    │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .tooltip:hover .tooltip-text {                                                                                     │ │
+│ │   visibility: visible;                                                                                             │ │
+│ │   opacity: 1;                                                                                                      │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ /* Responsive Utilities */                                                                                         │ │
+│ │ @media (max-width: 1200px) {                                                                                       │ │
+│ │   .container {                                                                                                     │ │
+│ │     max-width: 960px;                                                                                              │ │
+│ │   }                                                                                                                │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ @media (max-width: 992px) {                                                                                        │ │
+│ │   .container {                                                                                                     │ │
+│ │     max-width: 720px;                                                                                              │ │
+│ │   }                                                                                                                │ │
+│ │                                                                                                                    │ │
+│ │   .grid-4 {                                                                                                        │ │
+│ │     grid-template-columns: repeat(3, 1fr);                                                                         │ │
+│ │   }                                                                                                                │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ @media (max-width: 768px) {                                                                                        │ │
+│ │   .container {                                                                                                     │ │
+│ │     max-width: 540px;                                                                                              │ │
+│ │   }                                                                                                                │ │
+│ │                                                                                                                    │ │
+│ │   .grid-3, .grid-4 {                                                                                               │ │
+│ │     grid-template-columns: repeat(2, 1fr);                                                                         │ │
+│ │   }                                                                                                                │ │
+│ │                                                                                                                    │ │
+│ │   .sidebar {                                                                                                       │ │
+│ │     transform: translateX(-100%);                                                                                  │ │
+│ │   }                                                                                                                │ │
+│ │                                                                                                                    │ │
+│ │   .sidebar.active {                                                                                                │ │
+│ │     transform: translateX(0);                                                                                      │ │
+│ │   }                                                                                                                │ │
+│ │                                                                                                                    │ │
+│ │   .content-with-sidebar {                                                                                          │ │
+│ │     margin-left: 0;                                                                                                │ │
+│ │   }                                                                                                                │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ @media (max-width: 576px) {                                                                                        │ │
+│ │   .grid-2, .grid-3, .grid-4 {                                                                                      │ │
+│ │     grid-template-columns: 1fr;                                                                                    │ │
+│ │   }                                                                                                                │ │
+│ │                                                                                                                    │ │
+│ │   .table-responsive {                                                                                              │ │
+│ │     overflow-x: auto;                                                                                              │ │
+│ │   }                                                                                                                │ │
+│ │                                                                                                                    │ │
+│ │   .card-header {                                                                                                   │ │
+│ │     flex-direction: column;                                                                                        │ │
+│ │     align-items: flex-start;                                                                                       │ │
+│ │   }                                                                                                                │ │
+│ │                                                                                                                    │ │
+│ │   .navbar-menu {                                                                                                   │ │
+│ │     display: none;                                                                                                 │ │
+│ │   }                                                                                                                │ │
+│ │                                                                                                                    │ │
+│ │   .mobile-menu-toggle {                                                                                            │ │
+│ │     display: block;                                                                                                │ │
+│ │   }                                                                                                                │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ /* Print styles */                                                                                                 │ │
+│ │ @media print {                                                                                                     │ │
+│ │   body {                                                                                                           │ │
+│ │     background-color: white;                                                                                       │ │
+│ │     color: black;                                                                                                  │ │
+│ │   }                                                                                                                │ │
+│ │                                                                                                                    │ │
+│ │   .no-print {                                                                                                      │ │
+│ │     display: none !important;                                                                                      │ │
+│ │   }                                                                                                                │ │
+│ │                                                                                                                    │ │
+│ │   .container {                                                                                                     │ │
+│ │     max-width: 100%;                                                                                               │ │
+│ │     padding: 0;                                                                                                    │ │
+│ │   }                                                                                                                │ │
+│ │                                                                                                                    │ │
+│ │   a {                                                                                                              │ │
+│ │     color: black;                                                                                                  │ │
+│ │     text-decoration: underline;                                                                                    │ │
+│ │   }                                                                                                                │ │
+│ │                                                                                                                    │ │
+│ │   .card, .table-container {                                                                                        │ │
+│ │     box-shadow: none;                                                                                              │ │
+│ │     border: 1px solid #ddd;                                                                                        │ │
+│ │   }                                                                                                                │ │
+│ │                                                                                                                    │ │
+│ │   th {                                                                                                             │ │
+│ │     background-color: #f5f5f5;                                                                                     │ │
+│ │     color: black;                                                                                                  │ │
+│ │   }                                                                                                                │ │
+│ │                                                                                                                    │ │
+│ │   td {                                                                                                             │ │
+│ │     border-top: 1px solid #ddd;                                                                                    │ │
+│ │   }                                                                                                                │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ /* Utility classes */                                                                                              │ │
+│ │ .d-flex { display: flex; }                                                                                         │ │
+│ │ .justify-content-between { justify-content: space-between; }                                                       │ │
+│ │ .justify-content-center { justify-content: center; }                                                               │ │
+│ │ .align-items-center { align-items: center; }                                                                       │ │
+│ │ .flex-column { flex-direction: column; }                                                                           │ │
+│ │ .flex-wrap { flex-wrap: wrap; }                                                                                    │ │
+│ │ .gap-1 { gap: var(--spacing-xs); }                                                                                 │ │
+│ │ .gap-2 { gap: var(--spacing-sm); }                                                                                 │ │
+│ │ .gap-3 { gap: var(--spacing-md); }                                                                                 │ │
+│ │ .gap-4 { gap: var(--spacing-lg); }                                                                                 │ │
+│ │                                                                                                                    │ │
+│ │ .text-center { text-align: center; }                                                                               │ │
+│ │ .text-right { text-align: right; }                                                                                 │ │
+│ │ .text-left { text-align: left; }                                                                                   │ │
+│ │                                                                                                                    │ │
+│ │ .text-primary { color: var(--yellow-primary); }                                                                    │ │
+│ │ .text-success { color: var(--success); }                                                                           │ │
+│ │ .text-danger { color: var(--error); }                                                                              │ │
+│ │ .text-warning { color: var(--warning); }                                                                           │ │
+│ │ .text-info { color: var(--info); }                                                                                 │ │
+│ │ .text-muted { color: var(--text-muted); }                                                                          │ │
+│ │                                                                                                                    │ │
+│ │ .bg-dark { background-color: var(--dark-gray); }                                                                   │ │
+│ │ .bg-darker { background-color: var(--black); }                                                                     │ │
+│ │ .bg-medium { background-color: var(--medium-gray); }                                                               │ │
+│ │ .bg-light { background-color: var(--light-gray); }                                                                 │ │
+│ │ .bg-primary { background-color: var(--yellow-primary); }                                                           │ │
+│ │                                                                                                                    │ │
+│ │ .fw-normal { font-weight: 400; }                                                                                   │ │
+│ │ .fw-medium { font-weight: 500; }                                                                                   │ │
+│ │ .fw-bold { font-weight: 700; }                                                                                     │ │
+│ │                                                                                                                    │ │
+│ │ .fs-xs { font-size: var(--font-size-xs); }                                                                         │ │
+│ │ .fs-sm { font-size: var(--font-size-sm); }                                                                         │ │
+│ │ .fs-md { font-size: var(--font-size-md); }                                                                         │ │
+│ │ .fs-lg { font-size: var(--font-size-lg); }                                                                         │ │
+│ │ .fs-xl { font-size: var(--font-size-xl); }                                                                         │ │
+│ │ .fs-2xl { font-size: var(--font-size-2xl); }                                                                       │ │
+│ │                                                                                                                    │ │
+│ │ .m-0 { margin: 0; }                                                                                                │ │
+│ │ .mt-1 { margin-top: var(--spacing-xs); }                                                                           │ │
+│ │ .mt-2 { margin-top: var(--spacing-sm); }                                                                           │ │
+│ │ .mt-3 { margin-top: var(--spacing-md); }                                                                           │ │
+│ │ .mt-4 { margin-top: var(--spacing-lg); }                                                                           │ │
+│ │ .mt-5 { margin-top: var(--spacing-xl); }                                                                           │ │
+│ │ .mb-1 { margin-bottom: var(--spacing-xs); }                                                                        │ │
+│ │ .mb-2 { margin-bottom: var(--spacing-sm); }                                                                        │ │
+│ │ .mb-3 { margin-bottom: var(--spacing-md); }                                                                        │ │
+│ │ .mb-4 { margin-bottom: var(--spacing-lg); }                                                                        │ │
+│ │ .mb-5 { margin-bottom: var(--spacing-xl); }                                                                        │ │
+│ │ .ml-1 { margin-left: var(--spacing-xs); }                                                                          │ │
+│ │ .ml-2 { margin-left: var(--spacing-sm); }                                                                          │ │
+│ │ .ml-3 { margin-left: var(--spacing-md); }                                                                          │ │
+│ │ .ml-4 { margin-left: var(--spacing-lg); }                                                                          │ │
+│ │ .ml-5 { margin-left: var(--spacing-xl); }                                                                          │ │
+│ │ .mr-1 { margin-right: var(--spacing-xs); }                                                                         │ │
+│ │ .mr-2 { margin-right: var(--spacing-sm); }                                                                         │ │
+│ │ .mr-3 { margin-right: var(--spacing-md); }                                                                         │ │
+│ │ .mr-4 { margin-right: var(--spacing-lg); }                                                                         │ │
+│ │ .mr-5 { margin-right: var(--spacing-xl); }                                                                         │ │
+│ │                                                                                                                    │ │
+│ │ .p-0 { padding: 0; }                                                                                               │ │
+│ │ .p-1 { padding: var(--spacing-xs); }                                                                               │ │
+│ │ .p-2 { padding: var(--spacing-sm); }                                                                               │ │
+│ │ .p-3 { padding: var(--spacing-md); }                                                                               │ │
+│ │ .p-4 { padding: var(--spacing-lg); }                                                                               │ │
+│ │ .p-5 { padding: var(--spacing-xl); }                                                                               │ │
+│ │                                                                                                                    │ │
+│ │ .w-100 { width: 100%; }                                                                                            │ │
+│ │ .h-100 { height: 100%; }                                                                                           │ │
+│ │                                                                                                                    │ │
+│ │ .rounded { border-radius: var(--radius-md); }                                                                      │ │
+│ │ .rounded-sm { border-radius: var(--radius-sm); }                                                                   │ │
+│ │ .rounded-lg { border-radius: var(--radius-lg); }                                                                   │ │
+│ │ .rounded-circle { border-radius: 50%; }                                                                            │ │
+│ │                                                                                                                    │ │
+│ │ .shadow-sm { box-shadow: var(--shadow-sm); }                                                                       │ │
+│ │ .shadow-md { box-shadow: var(--shadow-md); }                                                                       │ │
+│ │ .shadow-lg { box-shadow: var(--shadow-lg); }                                                                       │ │
+│ │                                                                                                                    │ │
+│ │ .border { border: 1px solid var(--light-gray); }                                                                   │ │
+│ │ .border-top { border-top: 1px solid var(--light-gray); }                                                           │ │
+│ │ .border-bottom { border-bottom: 1px solid var(--light-gray); }                                                     │ │
+│ │ .border-left { border-left: 1px solid var(--light-gray); }                                                         │ │
+│ │ .border-right { border-right: 1px solid var(--light-gray); }                                                       │ │
+│ │                                                                                                                    │ │
+│ │ .overflow-hidden { overflow: hidden; }                                                                             │ │
+│ │ .overflow-auto { overflow: auto; }                                                                                 │ │
+│ │ .overflow-x-auto { overflow-x: auto; }                                                                             │ │
+│ │ .overflow-y-auto { overflow-y: auto; }                                                                             │ │
+│ │                                                                                                                    │ │
+│ │ .d-none { display: none; }                                                                                         │ │
+│ │ .d-block { display: block; }                                                                                       │ │
+│ │ .d-inline-block { display: inline-block; }                                                                         │ │
+│ │ .d-inline { display: inline; }                                                                                     │ │
+│ │                                                                                                                    │ │
+│ │ @media (min-width: 576px) {                                                                                        │ │
+│ │   .d-sm-none { display: none; }                                                                                    │ │
+│ │   .d-sm-block { display: block; }                                                                                  │ │
+│ │   .d-sm-flex { display: flex; }                                                                                    │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ @media (min-width: 768px) {                                                                                        │ │
+│ │   .d-md-none { display: none; }                                                                                    │ │
+│ │   .d-md-block { display: block; }                                                                                  │ │
+│ │   .d-md-flex { display: flex; }                                                                                    │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ @media (min-width: 992px) {                                                                                        │ │
+│ │   .d-lg-none { display: none; }                                                                                    │ │
+│ │   .d-lg-block { display: block; }                                                                                  │ │
+│ │   .d-lg-flex { display: flex; }                                                                                    │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ @media (min-width: 1200px) {                                                                                       │ │
+│ │   .d-xl-none { display: none; }                                                                                    │ │
+│ │   .d-xl-block { display: block; }                                                                                  │ │
+│ │   .d-xl-flex { display: flex; }                                                                                    │ │
+│ │ }                                                                                                                  │ │
+│ │                                                                                                                    │ │
+│ │ .position-relative { position: relative; }                                                                         │ │
+│ │ .position-absolute { position: absolute; }                                                                         │ │
+│ │ .position-fixed { position: fixed; }                                                                               │ │
+│ │ .position-sticky { position: sticky; }                                                                             │ │
+│ │                                                                                                                    │ │
+│ │ .top-0 { top: 0; }                                                                                                 │ │
+│ │ .bottom-0 { bottom: 0; }                                                                                           │ │
+│ │ .left-0 { left: 0; }                                                                                               │ │
+│ │ .right-0 { right: 0; }
